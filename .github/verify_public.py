@@ -43,11 +43,16 @@ class PageLinks(HTMLParser):
     def __init__(self, html):
         super().__init__()
         self.links = set()
+        self.anchors = set()
         self.feed(html)
         self.close()
 
     def handle_starttag(self, tag, attributes):
         attrs = dict(attributes)
+        if attrs.get("id"):
+            self.anchors.add(attrs["id"])
+        if tag == "a" and attrs.get("name"):
+            self.anchors.add(attrs["name"])
         for name in URL_ATTRIBUTES.get(tag, ()):
             if attrs.get(name):
                 self.links.add(attrs[name])
@@ -57,6 +62,12 @@ def verify(base_url):
     base = urlsplit(base_url)
     base_path = unquote(base.path)
     errors = []
+    pages = {}
+
+    def parse_page(file):
+        if file not in pages:
+            pages[file] = PageLinks(file.read_text(encoding="utf-8"))
+        return pages[file]
 
     for route, required_links in REQUIRED_LINKS.items():
         page = PUBLIC / route / "index.html"
@@ -66,7 +77,7 @@ def verify(base_url):
 
         page_url = urljoin(base_url, route)
         found = set()
-        for link in sorted(PageLinks(page.read_text(encoding="utf-8")).links):
+        for link in sorted(parse_page(page).links):
             target = urlsplit(urljoin(page_url, link))
             if (target.scheme, target.netloc) != (base.scheme, base.netloc):
                 continue
@@ -84,6 +95,10 @@ def verify(base_url):
                 errors.append(f"{route or '/'}: missing local target {link}")
                 continue
             found.add(relative)
+            fragment = unquote(target.fragment).split(":~:", 1)[0]
+            if file.suffix == ".html" and fragment and fragment.lower() != "top":
+                if fragment not in parse_page(file).anchors:
+                    errors.append(f"{route or '/'}: missing anchor {link}")
 
         for link in sorted(required_links - found):
             errors.append(f"{route or '/'}: missing required reference {link}")
@@ -99,7 +114,7 @@ def main():
         print("Portfolio verification failed:")
         print("\n".join(f"- {error}" for error in errors))
         return 1
-    print(f"Verified {len(REQUIRED_LINKS)} portfolio pages and their local links and files.")
+    print(f"Verified {len(REQUIRED_LINKS)} portfolio pages, local links, files, and anchors.")
     return 0
 
 
