@@ -156,9 +156,9 @@ locale = "ko-KR"
 [[languages.ko.menu.main]]
 name = "About"
 weight = 1
-url = "about/"
+pageRef = "/about"
 
 [[languages.ko.menu.main]]
 name = "Activities"
 weight = 2
-url = "projects/"
+pageRef = "/projects"

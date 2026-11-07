@@ -24,6 +24,11 @@
     text-transform: uppercase;
   }
 
+  .navigation-link[aria-current] {
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+  }
+
   .navigation-list {
     float: right;
     list-style: none;
