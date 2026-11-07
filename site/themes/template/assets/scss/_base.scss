@@ -249,6 +249,22 @@ figure {
   transition: $null-transition;
 }
 
+.skip-link {
+  position: absolute;
+  top: 1rem;
+  inset-inline-start: 1rem;
+  z-index: 101;
+  max-width: calc(100% - 2rem);
+  padding: .6rem 1.2rem;
+  border: 1px solid currentColor;
+  background: Canvas;
+  color: CanvasText;
+
+  &:not(:focus) {
+    clip-path: inset(50%);
+  }
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;

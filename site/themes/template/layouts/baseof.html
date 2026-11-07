@@ -15,16 +15,17 @@
 {{ end }}
 
 <body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
-  <main class="wrapper">
+  <a class="skip-link" href="#main-content">본문 바로가기</a>
+  <div class="wrapper">
     {{ partial "header.html" . }}
 
-    <div class="content">
+    <main class="content" id="main-content" tabindex="-1">
       {{ block "content" . }}{{ end }}
-    </div>
+    </main>
 
     {{ partial "footer.html" . }}
     {{ partial "float" . }}
-  </main>
+  </div>
 
   {{ if .HasShortcode "mermaid" }}
   <script src="https://cdn.jsdelivr.net/npm/mermaid@11.13.0/dist/mermaid.min.js"
