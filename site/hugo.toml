@@ -1,8 +1,8 @@
 baseURL = "http://www.example.com"
 title = "Jeon"
 
-languageCode = "en"
-defaultContentLanguage = "en"
+languageCode = "ko"
+defaultContentLanguage = "ko"
 enableEmoji = true
 
 [pagination]
@@ -151,24 +151,9 @@ icon = "fa-brands fa-github fa-2x"
 weight = 1
 url = "https://github.com/f31142/"
 
-[languages.en]
-languageName = "English"
-weight = 1
-
-[[languages.en.menu.main]]
-name = "About"
-weight = 1
-url = "about/"
-
-[[languages.en.menu.main]]
-name = "Activities"
-weight = 2
-url = "projects/"
-
 [languages.ko]
 languageName = "한국어"
 locale = "ko-KR"
-weight = 2
 
 [[languages.ko.menu.main]]
 name = "소개"
@@ -179,6 +164,3 @@ url = "about/"
 name = "활동"
 weight = 2
 url = "projects/"
-
-[languages.pt-br]
-disabled = true
