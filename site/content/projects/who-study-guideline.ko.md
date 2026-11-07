@@ -1,8 +1,8 @@
 +++
 title = "WHO 동아리 스터디 가이드라인 제작"
+description = "C언어와 Python의 주차별 학습 자료와 Git·GitHub 안내를 모은 Notion 사이트입니다."
 
 [params]
-activity_summary = "C언어와 Python의 주차별 학습 자료와 Git·GitHub 안내를 모은 Notion 사이트입니다."
 activity_label = "개인 활동 · 완료"
 +++
 

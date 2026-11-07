@@ -55,7 +55,7 @@ python -m http.server 8000 --bind 127.0.0.1 --directory public
 ### 새 활동 추가
 
 1. `site/content/projects/`에 활동마다 새 파일을 만듭니다. 예를 들어 `web-study.ko.md`를 만들면 상세 주소는 `/Portfolio26/projects/web-study/`가 됩니다.
-2. 파일 맨 위의 두 `+++` 사이에 `title = "활동 제목"`을 적고, 그 아래에 본문을 작성합니다. 카드에 요약과 상태를 표시하려면 같은 설정 영역의 `[params]` 아래에 `activity_summary`와 `activity_label`을 적습니다.
+2. 파일 맨 위의 두 `+++` 사이에 `title = "활동 제목"`을 적고, 그 아래에 본문을 작성합니다. 카드 요약과 공유 설명은 `description`에, 카드 상태는 `[params]` 아래의 `activity_label`에 적습니다.
 3. 배포 후 목록에서 새 제목을 눌러 상세 페이지가 열리는지 확인합니다.
 
 ## 출처와 이용 조건

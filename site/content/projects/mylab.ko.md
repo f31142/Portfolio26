@@ -1,8 +1,8 @@
 +++
 title = "멋쟁이사자처럼대학 14기 중앙해커톤 · MyLab"
+description = "AI가 제안하는 스킨케어 실험을 시작하고, 매일 기록으로 변화를 확인하는 모바일 앱입니다."
 
 [params]
-activity_summary = "AI가 제안하는 스킨케어 실험을 시작하고, 매일 기록으로 변화를 확인하는 모바일 앱입니다."
 activity_label = "팀 활동 · 완료"
 +++
 

@@ -1,5 +1,6 @@
 +++
 title = "소개"
+description = "프론트엔드에 관심을 갖게 된 계기, 전공 학습 목표, Git과 GitHub를 활용한 경험을 소개합니다."
 author = "Jeon"
 
 [params]

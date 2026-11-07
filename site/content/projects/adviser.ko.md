@@ -1,8 +1,8 @@
 +++
 title = "서류 첨삭 서비스 웹앱 제작 · Adviser"
+description = "서류 첨삭 신청부터 관리자 검토, 피드백, 결과물 확인까지 이어지는 웹 서비스입니다."
 
 [params]
-activity_summary = "서류 첨삭 신청부터 관리자 검토, 피드백, 결과물 확인까지 이어지는 웹 서비스입니다."
 activity_label = "개인 활동 · 진행 중"
 +++
 

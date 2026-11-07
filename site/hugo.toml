@@ -24,7 +24,7 @@ unsafe = true
 [params]
 author = "Jeon"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
-description = "My Portfolio Site"
+description = "프론트엔드를 공부하는 Jeon의 포트폴리오입니다. 관심 분야와 학습 목표, 직접 수행한 활동을 소개합니다."
 keywords = "blog,developer,personal"
 info = "My Portfolio Site"
 faviconSVG = "images/jeon-favicon.svg"
