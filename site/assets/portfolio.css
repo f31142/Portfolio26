@@ -81,7 +81,7 @@ body.colorscheme-dark .activity-index {
 .page > article > h2,
 .page > article > h3,
 .activity-layout h2 {
-  margin-block: 2.8rem 1.1rem;
+  margin-block: 3.6rem 1.4rem;
   padding-block-start: 1.6rem;
   border-block-start: 1px solid #777;
 }
@@ -90,6 +90,11 @@ body.colorscheme-dark .activity-index {
 .activity-layout p {
   text-align: start;
   overflow-wrap: anywhere;
+}
+
+.page > article > p + p,
+.activity-layout p + p {
+  margin-block-start: 2.4rem;
 }
 
 .activity-layout {
