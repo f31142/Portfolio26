@@ -1,6 +1,9 @@
 +++
 title = "소개"
 author = "Jeon"
+
+[params]
+compact_prose = true
 +++
 
 안녕하세요, Jeon입니다. 저는 프로그래밍을 공부하고 있는 학생입니다.
