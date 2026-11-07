@@ -27,10 +27,17 @@ python .github/pages_build.py --build
 | --- | --- |
 | 홈 소개, 메뉴, GitHub 링크 | `site/hugo.toml` |
 | 소개 본문 | `site/content/about.ko.md` |
-| 활동 본문 | `site/content/projects.ko.md` |
+| 활동 목록 제목 | `site/content/projects/_index.ko.md` |
+| 개별 활동 본문 | `site/content/projects/` 안의 각 `.ko.md` 파일 |
 | 자동 배포 설정 | `.github/workflows/hugo-pages.yml` |
 
 수정한 파일을 커밋하고 `main`에 푸시하면 GitHub Actions가 자동 실행됩니다. [Actions](https://github.com/f31142/Portfolio26/actions)에서 해당 커밋의 `build`와 `deploy`가 성공했는지 확인한 뒤, [공개 사이트](https://f31142.github.io/Portfolio26/)에서 변경 내용을 확인합니다.
+
+### 새 활동 추가
+
+1. `site/content/projects/`에 활동마다 새 파일을 만듭니다. 예를 들어 `web-study.ko.md`를 만들면 상세 주소는 `/Portfolio26/projects/web-study/`가 됩니다.
+2. 파일 맨 위의 두 `+++` 사이에 `title = "활동 제목"`을 적고, 그 아래에 본문을 작성합니다. 제목은 **Activities** 목록에 자동으로 표시됩니다.
+3. 배포 후 목록에서 새 제목을 눌러 상세 페이지가 열리는지 확인합니다.
 
 ## 출처와 이용 조건
 
