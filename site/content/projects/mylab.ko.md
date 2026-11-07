@@ -2,7 +2,9 @@
 title = "멋쟁이사자처럼대학 14기 중앙해커톤 · MyLab"
 +++
 
-**수행 기간 및 상태** · 2026년 7월 말부터 8월 중순까지 · 완료
+**수행 시기 및 상태** · 2026년 7월 말부터 8월 중순까지 · 완료
+
+**활동 형태** · 팀 활동
 
 <div class="activity-layout">
 <section class="activity-demo" aria-labelledby="mylab-demo-heading">
