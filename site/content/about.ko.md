@@ -4,6 +4,7 @@ author = "Jeon"
 
 [params]
 compact_prose = true
+title_icon = "fa-user"
 +++
 
 안녕하세요, Jeon입니다. 저는 프로그래밍을 공부하고 있는 학생입니다.

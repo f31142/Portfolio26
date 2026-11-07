@@ -42,6 +42,6 @@ python .github/pages_build.py --build
 ## 출처와 이용 조건
 
 - 테마는 Luiz F. A. de Prá와 기여자가 만든 [Hugo Coder](https://github.com/luizdepra/hugo-coder)입니다. 저장소의 [MIT 라이선스](LICENSE.md)와 [기여자 목록](CONTRIBUTORS.md)을 참고하세요.
-- 메뉴, GitHub, Instagram 아이콘에는 Hugo Coder에 포함된 [Font Awesome Free](https://fontawesome.com/license/free)를 사용했습니다. [웹폰트 라이선스 고지](site/themes/template/static/fonts/LICENSE.txt)와 [SCSS 라이선스 고지](site/themes/template/assets/scss/font-awesome/LICENSE.txt)를 참고하세요.
+- 메뉴, 페이지 제목, GitHub, Instagram 아이콘에는 Hugo Coder에 포함된 [Font Awesome Free](https://fontawesome.com/license/free)를 사용했습니다. [웹폰트 라이선스 고지](site/themes/template/static/fonts/LICENSE.txt)와 [SCSS 라이선스 고지](site/themes/template/assets/scss/font-awesome/LICENSE.txt)를 참고하세요.
 - 홈의 프로필 사진은 사이트 운영자가 제공한 여행 사진입니다. Gmail 링크에는 직접 그린 단색 아이콘을 사용했습니다.
 - 소개와 활동 내용은 본인 경험을 바탕으로 작성했습니다. 본문 표현 정리와 모바일 메뉴 접근성 개선에 AI의 도움을 받았습니다.

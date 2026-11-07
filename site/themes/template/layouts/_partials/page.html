@@ -3,6 +3,7 @@
     <header>
       <h1 class="title">
         <a class="title-link" href="{{ .Permalink | safeURL }}">
+          {{ with .Params.title_icon }}<i class="fa-solid {{ . }} page-title-icon" aria-hidden="true"></i>{{ end }}
           {{ .Title }}
         </a>
       </h1>

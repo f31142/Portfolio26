@@ -4,7 +4,10 @@
 {{ define "content" }}
 <section class="container activity-index" aria-labelledby="activity-index-title">
   <header>
-    <h1 class="title" id="activity-index-title">{{ .Title }}</h1>
+    <h1 class="title" id="activity-index-title">
+      {{ with .Params.title_icon }}<i class="fa-solid {{ . }} page-title-icon" aria-hidden="true"></i>{{ end }}
+      {{ .Title }}
+    </h1>
   </header>
   <ul class="activity-card-list">
     {{ range .RegularPages }}

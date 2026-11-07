@@ -19,6 +19,11 @@ body.colorscheme-dark .activity-index {
   text-decoration: underline;
 }
 
+.page-title-icon {
+  margin-inline-end: .35em;
+  font-size: .75em;
+}
+
 .activity-card-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
