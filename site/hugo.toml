@@ -149,6 +149,18 @@ icon = "fa-brands fa-github fa-2x"
 weight = 1
 url = "https://github.com/f31142/"
 
+[[params.social]]
+name = "Gmail로 이메일 보내기"
+icon = "gmail"
+weight = 2
+url = "mailto:f31142420@gmail.com"
+
+[[params.social]]
+name = "Instagram 프로필"
+icon = "fa-brands fa-instagram fa-2x"
+weight = 3
+url = "https://www.instagram.com/jinpyo_o/"
+
 [languages.ko]
 languageName = "한국어"
 locale = "ko-KR"

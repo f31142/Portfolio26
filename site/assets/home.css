@@ -2,7 +2,6 @@
   --home-panel: #fff;
   --home-border: #c9c9c9;
   --home-accent: #171717;
-  --home-avatar: #ebebeb;
   --home-action-text: #fff;
   padding-block: 2rem;
 }
@@ -11,7 +10,6 @@ body.colorscheme-dark .portfolio-home {
   --home-panel: #292929;
   --home-border: #626262;
   --home-accent: #f5f5f5;
-  --home-avatar: #424242;
   --home-action-text: #171717;
 }
 
@@ -25,16 +23,40 @@ body.colorscheme-dark .portfolio-home {
 }
 
 .portfolio-home-avatar {
-  display: grid;
-  place-items: center;
+  display: block;
   width: 8.8rem;
   height: 8.8rem;
   margin-inline: auto;
   border-radius: 50%;
-  background: var(--home-avatar);
-  color: var(--home-accent);
-  font-size: 4.4rem;
-  font-weight: 700;
+  object-fit: cover;
+}
+
+.portfolio-home .about ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+}
+
+.portfolio-home .about ul a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 4.4rem;
+  min-height: 4.4rem;
+  margin-inline: 0;
+}
+
+.portfolio-home .about ul a:focus-visible {
+  outline: 2px solid var(--home-accent);
+  outline-offset: 2px;
+}
+
+.social-gmail-icon {
+  width: 1.15em;
+  height: 1em;
+  font-size: 2em;
 }
 
 .portfolio-home .portfolio-home-kicker {
