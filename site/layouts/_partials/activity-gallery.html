@@ -1,0 +1,34 @@
+<details class="adviser-gallery" open>
+  <summary>
+    <span class="adviser-gallery-stack" aria-hidden="true">
+      {{ range .screens }}
+      <img src="{{ printf "%s/%s" $.directory .file | relURL }}" alt="" width="{{ .width }}" height="{{ .height }}" loading="lazy">
+      {{ end }}
+    </span>
+    <span class="adviser-gallery-open-label">이미지 {{ len .screens }}장 펼치기</span>
+    <span class="adviser-gallery-close-label">이미지 {{ len .screens }}장 접기</span>
+  </summary>
+  <div class="adviser-gallery-grid">
+    {{ range .screens }}
+    {{ $imageURL := printf "%s/%s" $.directory .file | relURL }}
+    <figure class="activity-screenshot">
+      <a class="adviser-gallery-image" href="{{ $imageURL }}">
+        <img src="{{ $imageURL }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}" loading="lazy">
+      </a>
+      <figcaption>{{ .caption }}</figcaption>
+    </figure>
+    {{ end }}
+  </div>
+</details>
+
+<dialog class="adviser-gallery-dialog" aria-labelledby="adviser-gallery-dialog-title">
+  <form method="dialog">
+    <button type="submit" autofocus>닫기</button>
+  </form>
+  <h3 id="adviser-gallery-dialog-title">{{ .dialogTitle }}</h3>
+  <img src="{{ printf "%s/%s" .directory (index .screens 0).file | relURL }}" alt="" loading="lazy">
+  <p></p>
+</dialog>
+
+{{- $script := resources.Get "js/adviser-gallery.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>

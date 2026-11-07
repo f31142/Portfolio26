@@ -9,37 +9,4 @@
     "alt" "아이디 또는 이메일과 비밀번호를 입력하는 Adviser 로그인 화면"
     "caption" "고객과 관리자가 사용하는 공통 로그인 화면입니다. 새 고객은 여기서 회원가입으로 이동할 수 있습니다.")
 -}}
-<details class="adviser-gallery" open>
-  <summary>
-    <span class="adviser-gallery-stack" aria-hidden="true">
-      {{ range $screens }}
-      <img src="{{ printf "images/adviser/%s" .file | relURL }}" alt="" width="{{ .width }}" height="{{ .height }}" loading="lazy">
-      {{ end }}
-    </span>
-    <span class="adviser-gallery-open-label">이미지 3장 펼치기</span>
-    <span class="adviser-gallery-close-label">이미지 3장 접기</span>
-  </summary>
-  <div class="adviser-gallery-grid">
-    {{ range $screens }}
-    {{ $imageURL := printf "images/adviser/%s" .file | relURL }}
-    <figure class="activity-screenshot">
-      <a class="adviser-gallery-image" href="{{ $imageURL }}">
-        <img src="{{ $imageURL }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}" loading="lazy">
-      </a>
-      <figcaption>{{ .caption }}</figcaption>
-    </figure>
-    {{ end }}
-  </div>
-</details>
-
-<dialog class="adviser-gallery-dialog" aria-labelledby="adviser-gallery-dialog-title">
-  <form method="dialog">
-    <button type="submit" autofocus>닫기</button>
-  </form>
-  <h3 id="adviser-gallery-dialog-title">Adviser 화면 확대</h3>
-  <img src="{{ printf "images/adviser/%s" (index $screens 0).file | relURL }}" alt="" loading="lazy">
-  <p></p>
-</dialog>
-
-{{- $script := resources.Get "js/adviser-gallery.js" | resources.Minify | resources.Fingerprint }}
-<script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
+{{- partial "activity-gallery.html" (dict "screens" $screens "directory" "images/adviser" "dialogTitle" "Adviser 화면 확대") }}
