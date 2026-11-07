@@ -9,7 +9,22 @@ title = "서류 첨삭 서비스 웹앱 제작 · Adviser"
 <div class="activity-layout">
 <section aria-labelledby="adviser-result-heading">
 
-<h2 id="adviser-result-heading">산출물 · Adviser 변경 기록</h2>
+<h2 id="adviser-result-heading">산출물 · Adviser 공개 화면</h2>
+
+<figure class="activity-screenshot">
+  <img src="../../images/adviser/service-selection.png" alt="기존 서류 첨삭과 초안 작성 서비스 선택 화면" width="938" height="863" loading="lazy">
+  <figcaption>기존 서류가 있는 고객과 초안이 필요한 고객에게 각각의 신청 경로를 보여주는 화면입니다.</figcaption>
+</figure>
+
+<figure class="activity-screenshot">
+  <img src="../../images/adviser/service-workflow.png" alt="서비스 선택부터 결과 확인까지 여섯 단계를 보여주는 이용 안내" width="940" height="900" loading="lazy">
+  <figcaption>서비스 선택, 서류 제출, 관리자 검토, 결제, 작업, 결과 확인의 흐름을 여섯 단계로 안내합니다.</figcaption>
+</figure>
+
+<figure class="activity-screenshot">
+  <img src="../../images/adviser/login.png" alt="아이디 또는 이메일과 비밀번호를 입력하는 Adviser 로그인 화면" width="932" height="901" loading="lazy">
+  <figcaption>고객과 관리자가 사용하는 공통 로그인 화면입니다. 새 고객은 여기서 회원가입으로 이동할 수 있습니다.</figcaption>
+</figure>
 
 GitHub에 로그인 화면 통합, 새로고침 후 화면 복원, 작업 내 채팅 갱신을 반영한 코드가 남아 있습니다. 아래 변경 기록에서 화면 이동을 처리하는 코드와 작업 상태를 갱신하는 서버 코드의 수정 내용을 확인할 수 있습니다. [Adviser 변경 기록](https://github.com/f31142/Adviser/commit/3de5ebdcd13bb2166dbd4bcb5d3d84abd22f7fdd)
 

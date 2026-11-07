@@ -30,6 +30,14 @@
   margin-inline: auto;
 }
 
+.activity-layout .activity-screenshot {
+  margin-block-end: 2.4rem;
+}
+
+.activity-screenshot img {
+  height: auto;
+}
+
 @media (max-width: 768px) {
   .activity-demo video {
     max-width: 24rem;
