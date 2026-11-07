@@ -1,30 +1,21 @@
 ---
-name: Bug report
-about: Create a report to help us improve
+name: 사이트 오류 제보
+about: 포트폴리오의 화면, 링크, 영상 재생 오류를 알려주세요.
 title: ""
-labels: "Triage Needed"
-assignees: ""
 ---
 
-## Describe the problem:
+## 문제가 발생한 페이지
 
-_Explain the problem you have encountered_
+페이지 주소를 적어주세요.
 
-### Steps to reproduce:
+## 재현 방법
 
-1. ***
-2. ***
-3. ***
+문제가 보이기까지 어떤 메뉴를 누르거나 어떤 작업을 했는지 순서대로 적어주세요.
 
-### Observed Results:
+## 예상한 동작과 실제 동작
 
--   What happened?
--   What did you expect to happen?
+예상한 동작과 화면에서 실제로 일어난 일을 각각 적어주세요.
 
-### Relevant code exceptions or logs
+## 확인 환경
 
-Note: Please copy/paste text of the messages, no screenshots of logs please.
-
-```
-// paste your log here
-```
+브라우저와 버전, 화면 폭, 라이트·다크 모드 중 어느 쪽인지 적어주세요. 필요하면 개인정보를 가린 화면 캡처를 첨부해주세요.

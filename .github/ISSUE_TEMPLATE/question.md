@@ -1,11 +1,11 @@
 ---
-name: Question
-about: Ask a question you could not find an answer in the docs
+name: 포트폴리오 사용 질문
+about: 로컬 빌드, 활동 추가, 배포 안내에서 궁금한 점을 알려주세요.
 title: ""
-labels: "Question"
+labels: ""
 assignees: ""
 ---
 
-## Your question
+## 질문
 
-_Ask the question you have not been able to find an answer in the Documentation_
+README에서 확인한 내용과 추가로 궁금한 점을 적어주세요. 명령을 실행하다 문제가 생겼다면 사용한 명령과 오류 메시지를 함께 적어주세요.

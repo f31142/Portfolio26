@@ -1,11 +1,15 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
+name: 포트폴리오 개선 제안
+about: 탐색, 가독성, 접근성 등 개선 아이디어를 제안해주세요.
 title: ""
 labels: ""
 assignees: ""
 ---
 
-## Describe the enhancement
+## 개선하고 싶은 부분
 
-_Explain the enhancement you would like_
+관련 페이지와 겪었던 불편을 적어주세요.
+
+## 바라는 동작
+
+어떤 방식으로 개선하면 도움이 될지 적어주세요.
