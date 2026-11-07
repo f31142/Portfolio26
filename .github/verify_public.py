@@ -61,6 +61,7 @@ class PageLinks(HTMLParser):
 def verify(base_url):
     base = urlsplit(base_url)
     base_path = unquote(base.path)
+    public_root = PUBLIC.resolve()
     errors = []
     pages = {}
 
@@ -91,8 +92,14 @@ def verify(base_url):
             file = PUBLIC / relative
             if target_path.endswith("/") or file.is_dir():
                 file /= "index.html"
-            if not file.resolve().is_relative_to(PUBLIC.resolve()) or not file.is_file():
+            resolved = file.resolve()
+            if not resolved.is_relative_to(public_root) or not file.is_file():
                 errors.append(f"{route or '/'}: missing local target {link}")
+                continue
+            requested_name = file.relative_to(PUBLIC).as_posix()
+            actual_name = resolved.relative_to(public_root).as_posix()
+            if requested_name != actual_name and requested_name.casefold() == actual_name.casefold():
+                errors.append(f"{route or '/'}: wrong case in {link}; expected {actual_name}")
                 continue
             found.add(relative)
             fragment = unquote(target.fragment).split(":~:", 1)[0]
