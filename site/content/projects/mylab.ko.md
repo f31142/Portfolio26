@@ -1,19 +1,16 @@
 +++
-title = "활동"
-slug = "projects"
+title = "멋쟁이사자처럼대학 14기 중앙해커톤 · MyLab"
 +++
-
-## 멋쟁이사자처럼대학 14기 중앙해커톤 · MyLab
 
 **수행 기간 및 상태** · 2026년 7월 말부터 8월 중순까지 · 완료
 
 <div class="activity-layout">
 <section class="activity-demo" aria-labelledby="mylab-demo-heading">
 
-<h3 id="mylab-demo-heading">산출물 · MyLab 시연 영상</h3>
+<h2 id="mylab-demo-heading">산출물 · MyLab 시연 영상</h2>
 
-<video controls playsinline preload="metadata" width="390" height="842" aria-label="MyLab 온보딩과 홈 화면 시연" src="../media/mylab-demo.mp4">
-  <a href="../media/mylab-demo.mp4">MyLab 시연 영상 열기</a>
+<video controls playsinline preload="metadata" width="390" height="842" aria-label="MyLab 온보딩과 홈 화면 시연" src="../../media/mylab-demo.mp4">
+  <a href="../../media/mylab-demo.mp4">MyLab 시연 영상 열기</a>
 </video>
 
 제가 구현한 MyLab 온보딩과 홈 화면을 녹화했습니다. 이용 안내에서 피부 타입 설문을 완료하면 ‘나의 실험실’ 홈으로 이동하는 흐름을 확인할 수 있습니다. 홈에서는 진행 중인 실험과 완료된 실험을 구분하고, 새 실험을 시작할 수 있도록 구성했습니다.
@@ -21,23 +18,25 @@ slug = "projects"
 </section>
 <div class="activity-details">
 
-### 활동 목적
+## 활동 목적
 
 우리 팀은 AI 기반 스킨케어 실험 앱 MyLab을 개발했습니다. 사용자의 피부 고민과 사용하는 제품에 맞춰 AI가 실험 방법과 기간을 제안하고, 사용자는 매일 피부 상태를 기록해 변화를 확인합니다. 사용자가 기록을 바탕으로 자신에게 맞는 제품과 생활 습관을 찾아가도록 돕는 것이 목표였습니다.
 
-### 맡은 역할
+## 맡은 역할
 
 팀장으로서 팀원들과 서비스 기획과 역할 분담을 조율했습니다. 개발에서는 Flutter로 온보딩과 홈 화면을 구현했습니다.
 
-### 수행 과정과 구현 방식
+## 수행 과정과 구현 방식
 
 먼저 팀원들과 서비스 흐름을 정리하고 역할을 나눴습니다. 이후 와이어프레임을 바탕으로 로그인·회원가입, 서비스 이용 안내, 피부 정보 설문에서 홈으로 이어지는 화면을 구현했습니다.
 
 Flutter는 화면을 위젯 단위로 구성하고 앱 상태에 따라 표시할 내용을 바꾸기 편해 MyLab에 적합했습니다. 홈에서는 진행 중인 실험과 완료된 실험 이력을 구분해 보여주고, 새 실험을 시작할 때 제품이나 피부 고민 중 하나를 입력하도록 구성했습니다. 이미 진행 중인 실험이 있으면 새 실험을 중복해서 시작할 수 없도록 안내했습니다. 제가 만든 온보딩과 홈 화면을 팀원들이 개발한 실험·기록 화면에 연결하면서 기존 사용자 흐름을 유지하기 위해, 팀에서 사용하던 데이터 구조와 화면 이동 규칙을 따랐습니다.
 
-### 배운 점과 개선 방향
+## 배운 점과 개선 방향
 
 팀원들과 기획과 개발을 계속 조율하면서, 역할을 나누고 각자 만든 기능을 연결하는 과정을 경험했습니다. 당시에는 Git과 GitHub 사용 경험이 부족해 명령을 입력하거나 문제를 해결할 때 AI에 많이 의존했습니다. 지금은 초급 프로젝트 수업에서 Git 명령을 직접 입력하고, 변경 내용과 커밋·푸시 결과를 확인하며 각 명령의 역할을 익히고 있습니다.
 
 </div>
 </div>
+
+<p><a href="../">← 활동 목록</a></p>

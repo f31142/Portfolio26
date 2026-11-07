@@ -1,6 +1,6 @@
 .page > article > h2,
 .page > article > h3,
-.activity-layout h3 {
+.activity-layout h2 {
   margin-block: 2.8rem 1.1rem;
   padding-block-start: 1.6rem;
   border-block-start: 1px solid #777;
@@ -18,7 +18,7 @@
   gap: 3.2rem;
 }
 
-.activity-layout h3:first-child {
+.activity-layout h2:first-child {
   margin-block-start: 0;
 }
 
