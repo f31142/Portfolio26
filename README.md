@@ -1,53 +1,39 @@
-<p align="center">
-  <p align="center">
-    <a href="https://themes.gohugo.io/hugo-coder/">
-      <img src="https://img.shields.io/badge/theme-hugo--coder-2b8cbe" alt="Hugo Theme Badge"">
-    </a>
-    <a href="https://github.com/luizdepra/hugo-coder/blob/master/LICENSE.txt">
-      <img src="https://img.shields.io/github/license/luizdepra/hugo-coder.svg" alt="MIT License Badge">
-    </a>
-  </p>
+# Portfolio26
 
-  <p align="center">
-    <a href="https://github.com/luizdepra/hugo-coder">
-      <img src="images/logos/logotype-a.png" alt="Hugo Coder Logo" width="600px" height="184px">
-    </a>
-  </p>
-</p>
+Jeon의 한국어 포트폴리오입니다. 소개 페이지에는 관심 분야와 학습 목표를, 활동 페이지에는 중앙해커톤에서 진행한 MyLab 프로젝트와 제가 맡은 작업을 정리했습니다. [공개 사이트](https://f31142.github.io/Portfolio26/)
 
-A simple and clean blog theme for [Hugo](https://gohugo.io/).
+## 로컬 빌드
 
-![](images/screenshot.png)
+GitHub Actions와 같은 버전을 사용하려면 아래 도구를 운영체제에 맞게 설치하고, 터미널에서 실행할 수 있도록 PATH에 추가합니다.
 
-## Live Demo
+- [Python 3.12](https://www.python.org/downloads/)
+- [Node.js 24와 npm](https://nodejs.org/en/download)
+- [Go 1.27.1](https://go.dev/dl/)
+- [Hugo Extended 0.167.0](https://github.com/gohugoio/hugo/releases/tag/v0.167.0)
+- [Dart Sass 1.105.0](https://github.com/sass/dart-sass/releases/tag/1.105.0)
 
-See [here](https://hugo-coder.netlify.app/).
+`README.md`와 `.github` 폴더가 있는 저장소 루트에서 아래 명령을 순서대로 실행합니다.
 
-## Quick Start
+```bash
+python .github/pages_build.py --dependencies
+python .github/pages_build.py --build
+```
 
-1. Add the repository into your Hugo Project repository as a submodule, `git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder`.
-2. Configure your `hugo.toml`. You can either use [this minimal configuration](https://github.com/luizdepra/hugo-coder/blob/main/docs/configurations.md#complete-example) as a base, or look for a complete explanation about all configurations [here](https://github.com/luizdepra/hugo-coder/blob/main/docs/configurations.md). The [`hugo.toml`](https://github.com/luizdepra/hugo-coder/blob/master/exampleSite/hugo.toml) inside the [`exampleSite`](https://github.com/luizdepra/hugo-coder/tree/master/exampleSite) is also a good reference.
-3. Build your site with `hugo server` and see the result at `http://localhost:1313/`.
+빌드가 성공하면 저장소 루트의 `public/`에 결과물이 생성됩니다. 홈 페이지 파일은 `public/index.html`입니다.
 
-## Documentation
+## 수정과 재배포
 
-See the [`docs`](docs/home.md) folder.
+| 수정 대상 | 파일 |
+| --- | --- |
+| 홈 소개, 메뉴, GitHub 링크 | `site/hugo.toml` |
+| 소개 본문 | `site/content/about.ko.md` |
+| 활동 본문 | `site/content/projects.ko.md` |
+| 자동 배포 설정 | `.github/workflows/hugo-pages.yml` |
 
-## License
+수정한 파일을 커밋하고 `main`에 푸시하면 GitHub Actions가 자동 실행됩니다. [Actions](https://github.com/f31142/Portfolio26/actions)에서 해당 커밋의 `build`와 `deploy`가 성공했는지 확인한 뒤, [공개 사이트](https://f31142.github.io/Portfolio26/)에서 변경 내용을 확인합니다.
 
-Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-coder/blob/master/LICENSE.md).
+## 출처와 이용 조건
 
-## Maintenance
-
-This theme is maintained by its author [Luiz de Prá](https://github.com/luizdepra) with the help from these awesome [contributors](CONTRIBUTORS.md).
-
-## Sponsoring
-
-If you like my project or it was useful for you, consider supporting its development. Just:
-
-<a href="https://www.buymeacoffee.com/luizdepra" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-green.png" alt="Buy Me A Coffee" height="41" width="174"></a>
-
-## Special Thanks
-
--   Gleen McComb, for his great [article](https://glennmccomb.com/articles/how-to-build-custom-hugo-pagination/) about custom pagination.
--   All contributors, for every PR and Issue reported.
+- 테마는 Luiz F. A. de Prá와 기여자가 만든 [Hugo Coder](https://github.com/luizdepra/hugo-coder)입니다. 저장소의 [MIT 라이선스](LICENSE.md)와 [기여자 목록](CONTRIBUTORS.md)을 참고하세요.
+- 홈의 아바타(`site/static/images/avatar.jpg`)는 Hugo Coder 예제에 포함된 이미지입니다.
+- 소개와 활동 내용은 본인 경험을 바탕으로 작성했습니다. 본문 표현 정리와 모바일 메뉴 접근성 개선에 AI의 도움을 받았습니다.
