@@ -1,11 +1,41 @@
 .page > article > h2,
-.page > article > h3 {
+.page > article > h3,
+.activity-layout h3 {
   margin-block: 2.8rem 1.1rem;
   padding-block-start: 1.6rem;
   border-block-start: 1px solid #777;
 }
 
-.page > article > p {
+.page > article > p,
+.activity-layout p {
   text-align: start;
   overflow-wrap: anywhere;
+}
+
+.activity-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 3.2rem;
+}
+
+.activity-layout h3:first-child {
+  margin-block-start: 0;
+}
+
+.activity-demo video {
+  display: block;
+  width: 100%;
+  max-width: 28rem;
+  height: auto;
+  margin-inline: auto;
+}
+
+@media (max-width: 768px) {
+  .activity-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .activity-demo video {
+    max-width: 24rem;
+  }
 }
