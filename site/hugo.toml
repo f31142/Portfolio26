@@ -156,11 +156,11 @@ languageName = "한국어"
 locale = "ko-KR"
 
 [[languages.ko.menu.main]]
-name = "소개"
+name = "About"
 weight = 1
 url = "about/"
 
 [[languages.ko.menu.main]]
-name = "활동"
+name = "Activities"
 weight = 2
 url = "projects/"
