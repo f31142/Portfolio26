@@ -15,7 +15,6 @@
 {{ end }}
 
 <body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
-  {{ partial "float" . }}
   <main class="wrapper">
     {{ partial "header.html" . }}
 
@@ -24,6 +23,7 @@
     </div>
 
     {{ partial "footer.html" . }}
+    {{ partial "float" . }}
   </main>
 
   {{ if .HasShortcode "mermaid" }}

@@ -5,6 +5,12 @@
   position: fixed;
   font-size: 1.6em;
 
+  @media only screen and (max-width: 768px) {
+    position: static;
+    align-self: flex-end;
+    margin: 0 2rem 1rem;
+  }
+
   a {
     position: relative;
     display: inline-block;
