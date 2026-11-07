@@ -14,7 +14,7 @@
 
 .activity-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 3.2rem;
 }
 
@@ -31,10 +31,6 @@
 }
 
 @media (max-width: 768px) {
-  .activity-layout {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
   .activity-demo video {
     max-width: 24rem;
   }
