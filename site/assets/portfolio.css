@@ -1,17 +1,22 @@
 .activity-index {
-  --activity-surface: #f3f6ff;
-  --activity-border: #b8c9ea;
-  --activity-accent: #244a9d;
-  --activity-label: #e0eaff;
-  --activity-text: #263550;
+  --activity-surface: #fff;
+  --activity-border: #c9c9c9;
+  --activity-accent: #171717;
+  --activity-label: #ebebeb;
+  --activity-text: #333;
 }
 
 body.colorscheme-dark .activity-index {
-  --activity-surface: #222d43;
-  --activity-border: #52688f;
-  --activity-accent: #afc7ff;
-  --activity-label: #344769;
-  --activity-text: #e4ebf8;
+  --activity-surface: #292929;
+  --activity-border: #626262;
+  --activity-accent: #f5f5f5;
+  --activity-label: #424242;
+  --activity-text: #ddd;
+}
+
+.page article p a,
+.footer a {
+  text-decoration: underline;
 }
 
 .activity-card-list {

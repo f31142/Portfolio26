@@ -1,18 +1,18 @@
 .portfolio-home {
-  --home-panel: #f3f6ff;
-  --home-border: #b8c9ea;
-  --home-accent: #244a9d;
-  --home-avatar: #e0eaff;
+  --home-panel: #fff;
+  --home-border: #c9c9c9;
+  --home-accent: #171717;
+  --home-avatar: #ebebeb;
   --home-action-text: #fff;
   padding-block: 2rem;
 }
 
 body.colorscheme-dark .portfolio-home {
-  --home-panel: #222d43;
-  --home-border: #52688f;
-  --home-accent: #afc7ff;
-  --home-avatar: #344769;
-  --home-action-text: #13203a;
+  --home-panel: #292929;
+  --home-border: #626262;
+  --home-accent: #f5f5f5;
+  --home-avatar: #424242;
+  --home-action-text: #171717;
 }
 
 .portfolio-home-card {
