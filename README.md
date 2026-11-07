@@ -1,6 +1,10 @@
 # Portfolio26
 
-Jeon의 한국어 포트폴리오입니다. 소개 페이지에는 관심 분야와 학습 목표를, 활동 페이지에는 중앙해커톤에서 진행한 MyLab 프로젝트와 제가 맡은 작업을 정리했습니다. [공개 사이트](https://f31142.github.io/Portfolio26/)
+Jeon의 한국어 포트폴리오입니다. [소개](https://f31142.github.io/Portfolio26/about/)에는 관심 분야와 학습 목표를, [활동 목록](https://f31142.github.io/Portfolio26/projects/)에는 아래 작업을 정리했습니다. [공개 사이트](https://f31142.github.io/Portfolio26/)
+
+- [MyLab](https://f31142.github.io/Portfolio26/projects/mylab/) · 중앙해커톤 팀 프로젝트에서 Flutter로 온보딩과 홈 화면을 구현했습니다.
+- [Adviser](https://f31142.github.io/Portfolio26/projects/adviser/) · 서류 첨삭 서비스 웹앱을 만들며 고객과 관리자의 이용 흐름을 설계했습니다.
+- [WHO 스터디 가이드라인](https://f31142.github.io/Portfolio26/projects/who-study-guideline/) · C언어·Python 주차별 자료와 Git·GitHub 안내를 모은 Notion 사이트를 만들었습니다.
 
 ## 로컬 빌드
 
@@ -25,7 +29,8 @@ python .github/pages_build.py --build
 
 | 수정 대상 | 파일 |
 | --- | --- |
-| 홈 소개, 메뉴, GitHub 링크 | `site/hugo.toml` |
+| 홈 소개, 메뉴, 연락처 링크 | `site/hugo.toml`의 홈 설정과 `[[params.social]]` |
+| 홈 프로필 사진 | `site/static/images/jeon-portrait.jpg` |
 | 소개 본문 | `site/content/about.ko.md` |
 | 활동 목록 제목 | `site/content/projects/_index.ko.md` |
 | 개별 활동 본문 | `site/content/projects/` 안의 각 `.ko.md` 파일 |
@@ -36,7 +41,7 @@ python .github/pages_build.py --build
 ### 새 활동 추가
 
 1. `site/content/projects/`에 활동마다 새 파일을 만듭니다. 예를 들어 `web-study.ko.md`를 만들면 상세 주소는 `/Portfolio26/projects/web-study/`가 됩니다.
-2. 파일 맨 위의 두 `+++` 사이에 `title = "활동 제목"`을 적고, 그 아래에 본문을 작성합니다. 제목은 **Activities** 목록에 자동으로 표시됩니다.
+2. 파일 맨 위의 두 `+++` 사이에 `title = "활동 제목"`을 적고, 그 아래에 본문을 작성합니다. 카드에 요약과 상태를 표시하려면 같은 설정 영역의 `[params]` 아래에 `activity_summary`와 `activity_label`을 적습니다.
 3. 배포 후 목록에서 새 제목을 눌러 상세 페이지가 열리는지 확인합니다.
 
 ## 출처와 이용 조건
