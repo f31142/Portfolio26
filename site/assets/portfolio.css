@@ -98,6 +98,24 @@ body.colorscheme-dark .activity-index {
   gap: 3.2rem;
 }
 
+.activity-jump ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem 1.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.activity-jump a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 4.4rem;
+  padding-inline: 1rem;
+  border: 1px solid currentColor;
+  border-radius: .6rem;
+}
+
 .activity-layout h2:first-child {
   margin-block-start: 0;
 }
