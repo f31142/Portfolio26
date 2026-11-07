@@ -10,10 +10,10 @@
     {{ range .RegularPages }}
     <li>
       <a class="activity-card" href="{{ .RelPermalink }}">
+        <h2 class="activity-card-title">{{ .Title }}</h2>
         {{ with .Params.activity_label }}
         <span class="activity-card-label">{{ . }}</span>
         {{ end }}
-        <h2 class="activity-card-title">{{ .Title }}</h2>
         {{ with .Params.activity_summary }}
         <p class="activity-card-summary">{{ . }}</p>
         {{ end }}
