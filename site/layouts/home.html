@@ -1,0 +1,14 @@
+{{ define "content" }}
+<section class="container centered portfolio-home" aria-labelledby="portfolio-home-title">
+  <div class="about portfolio-home-card">
+    <div class="portfolio-home-avatar" aria-hidden="true">J</div>
+    <p class="portfolio-home-kicker" lang="en">{{ .Site.Params.info }}</p>
+    <h1 id="portfolio-home-title">{{ .Site.Params.author }}</h1>
+    <p class="portfolio-home-intro">프론트엔드를 공부하고 있습니다.</p>
+    {{ with .Site.GetPage "/projects" }}
+    <a class="portfolio-home-action" href="{{ .RelPermalink }}">활동 보기</a>
+    {{ end }}
+    {{ partial "home/social.html" . }}
+  </div>
+</section>
+{{ end }}
