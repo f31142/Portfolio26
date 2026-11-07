@@ -28,14 +28,6 @@
       }
     }
 
-    #menu-toggle {
-      @media only screen and (max-width: 768px) {
-        &:checked+label>i {
-          color: $alt-bg-color-dark;
-        }
-      }
-    }
-
     i {
       color: $fg-color-dark;
 

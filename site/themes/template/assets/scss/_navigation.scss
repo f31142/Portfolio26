@@ -106,8 +106,14 @@
       height: 1px;
       opacity: 0;
 
-      &:checked+label>i {
-        color: $alt-bg-color;
+      &:checked + label {
+        .menu-icon-open {
+          display: none;
+        }
+
+        .menu-icon-close {
+          display: inline-block;
+        }
       }
 
       &:checked+label+ul {
@@ -124,6 +130,10 @@
 
   .menu-button {
     display: none;
+
+    .menu-icon-close {
+      display: none;
+    }
 
     @media only screen and (max-width: 768px) {
       position: relative;
