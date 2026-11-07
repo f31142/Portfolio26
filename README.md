@@ -25,6 +25,20 @@ python .github/pages_build.py --build
 
 빌드가 성공하면 저장소 루트의 `public/`에 결과물이 생성됩니다. 홈 페이지 파일은 `public/index.html`입니다.
 
+### 브라우저에서 미리보기
+
+위 도구를 준비한 뒤 저장소 루트의 Git Bash에서 아래 명령을 순서대로 실행합니다.
+
+```bash
+python .github/pages_build.py --dependencies
+SITE_BASE_URL=http://127.0.0.1:8000/ python .github/pages_build.py --build
+python -m http.server 8000 --bind 127.0.0.1 --directory public
+```
+
+브라우저에서 [로컬 미리보기](http://127.0.0.1:8000/)를 열어 홈, 소개, 활동 상세의 화면과 링크를 확인합니다. 종료하려면 Git Bash에서 `Ctrl+C`를 누릅니다.
+
+배포 주소를 기준으로 검사하려면 `python .github/pages_build.py --build`를 다시 실행하고 `python .github/verify_public.py`를 실행합니다. 이 검사는 빌드된 주요 페이지와 사이트 내부 파일의 존재 여부를 확인합니다. 외부 사이트의 접속과 화면 동작은 브라우저에서 확인합니다.
+
 ## 수정과 재배포
 
 | 수정 대상 | 파일 |
