@@ -27,6 +27,7 @@ author = "Jeon"
 description = "My Portfolio Site"
 keywords = "blog,developer,personal"
 info = "My Portfolio Site"
+faviconSVG = "images/jeon-favicon.svg"
 #gravatar = "john.doe@example.com"
 dateFormat = "January 2, 2006"
 # Git Commit in Footer, uncomment the line below to enable it
