@@ -1,0 +1,14 @@
+{{ define "title" }}페이지를 찾을 수 없어요 · {{ .Site.Title }}{{ end }}
+{{ define "content" }}
+<section class="container centered">
+  <div class="error">
+    <p>404</p>
+    <h1>페이지를 찾을 수 없어요</h1>
+    <p>주소가 바뀌었거나 잘못 입력되었을 수 있어요.</p>
+    <p>
+      <a href="{{ .Site.Home.RelPermalink }}">홈으로 돌아가기</a>
+      {{ with .Site.GetPage "/projects" }} · <a href="{{ .RelPermalink }}">활동 목록 보기</a>{{ end }}
+    </p>
+  </div>
+</section>
+{{ end }}
